@@ -9,7 +9,7 @@ package edu.ijse.mvc.dto;
  * @author mskku
  */
 
-    public class ItemDto {
+public class ItemDto {
     private String itemCode;
     private String description;
     private String packSize;
@@ -18,6 +18,7 @@ package edu.ijse.mvc.dto;
 
     public ItemDto() {
     }
+
     public ItemDto(String itemCode, String description, String packSize, int qoh, double unitPrice) {
         this.itemCode = itemCode;
         this.description = description;
@@ -95,6 +96,14 @@ package edu.ijse.mvc.dto;
     public void setUnitPrice(double unitPrice) {
         this.unitPrice = unitPrice;
     }
+
+    @Override
+    public String toString() {
+        return "ItemDto{" + "itemCode=" + itemCode + ", description=" + description + ", packSize=" + packSize + ", qoh=" + qoh + ", unitPrice=" + unitPrice + '}';
+    }
     
     
+    
+}
+
 
